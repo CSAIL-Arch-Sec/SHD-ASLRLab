@@ -82,9 +82,9 @@ def main():
             points += 20
     if args.part == '1b' or args.part == 'all':
         print("Checking part 1B...")
-        points_possible += 20
+        points_possible += 40
         if check("part1/b", 1000, b"Correct!!", 0.9):
-            points += 20
+            points += 40
     if args.part == '1c' or args.part == 'all':
         print("Part 1C has no auto-checker")
         print_success()
