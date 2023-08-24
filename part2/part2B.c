@@ -34,7 +34,7 @@ void lab_code() {
 
 	// Fill the array with 0xFF's and set the last character to be a new line.
 	memset(your_string, 0xFF, sizeof(your_string));
-	your_string[0] = 0x000000000000000A;
+	your_string[127] = 0x000000000000000A;
 
 	// For now we don't worry about ASLR, we can directly use these addresses:
 	uint64_t gadget1_addr = (uint64_t)&gadget1;
