@@ -78,12 +78,12 @@ def main():
     if args.part == '1a' or args.part == 'all':
         print("Checking part 1A...")
         points_possible += 20
-        if check("part1/a", 1000, b"Correct!!", 1.00):
+        if check("part1/a", 100, b"Correct!!", 1.00):
             points += 20
     if args.part == '1b' or args.part == 'all':
         print("Checking part 1B...")
         points_possible += 40
-        if check("part1/b", 1000, b"Correct!!", 0.9):
+        if check("part1/b", 100, b"Correct!!", 0.9):
             points += 40
     if args.part == '1c' or args.part == 'all':
         print("Part 1C has no auto-checker")
@@ -93,20 +93,20 @@ def main():
         # in an address somewhere, stopping the overflow from completing.
         print("Checking part 2A...")
         points_possible += 10
-        if check("part2/a", 1000, b"MIT{nic3_s0lv3!}", 0.50):
+        if check("part2/a", 100, b"MIT{nic3_s0lv3!}", 0.50):
             points += 10
     if args.part == '2b' or args.part == 'all':
         # We allow this to fail on occasion in case an 0x0A byte showed up randomly
         # in an address somewhere, stopping the overflow from completing.
         print("Checking part 2B...")
         points_possible += 20
-        if check("part2/b", 1000, b"MIT{lab_p4rtTw0_1s_d0n3}", 0.50):
+        if check("part2/b", 100, b"MIT{lab_p4rtTw0_1s_d0n3}", 0.50):
             points += 20
     if args.part == '3' or args.part == 'all':
         print("Checking part 3...")
         points_possible += 10
         os.chdir('part3')
-        if check("part3", 1000, b"MIT{and_thats_all_folks!}", 0.50):
+        if check("part3", 100, b"MIT{and_thats_all_folks!}", 0.50):
             points += 10
     
     print(f"Your score is {points} / {points_possible}")

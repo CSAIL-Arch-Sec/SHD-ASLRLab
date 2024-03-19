@@ -30,8 +30,8 @@ void do_overflow(uint64_t page_addr);
 
 uint64_t find_address(uint64_t low_bound, uint64_t high_bound) {
 
-	// Put your Part 1 code here
-	// You are free to choose any of 1A, 1B, or 1C
+    // Put your Part 1 code here
+    // You are free to choose any of 1A, 1B, or 1C
 
     return 0;
 }
@@ -42,9 +42,9 @@ uint64_t find_address(uint64_t low_bound, uint64_t high_bound) {
  */
 void do_overflow(uint64_t page_addr) {
 
-	// Put your Part 2 code here
-	// Use the page you found with find_address
-	// and the offsets located from objdump to find your gadgets
+    // Put your Part 2 code here
+    // Use the page you found with find_address
+    // and the offsets located from objdump to find your gadgets
 
 }
 
@@ -55,6 +55,6 @@ void do_overflow(uint64_t page_addr) {
  * chain using payloads located in the page.
  */
 void lab_code(uint64_t low_bound, uint64_t high_bound) {
-	uint64_t found_page = find_address(low_bound, high_bound);
-	do_overflow(found_page);
+    uint64_t found_page = find_address(low_bound, high_bound);
+    do_overflow(found_page);
 }
